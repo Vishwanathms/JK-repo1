@@ -1,1 +1,2 @@
 1st line added in the local master
+2nd line added in the local master - commit 2
