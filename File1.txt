@@ -1,7 +1,3 @@
 1st line added in the local master
 2nd line added in the local master - commit two
-3rd line added in the Branch B1
 
-4th line added in the local Branch B2
-5th Line added in the local Branch B1
-6th Line added in the local Branch B2
