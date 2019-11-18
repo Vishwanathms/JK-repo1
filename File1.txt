@@ -4,3 +4,4 @@
 4th line added 
 5th line added git bash
 6th line added in the github remote
+7th line added in the local Branch B1
