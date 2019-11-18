@@ -4,3 +4,4 @@
 
 4th line added in the local Branch B2
 5th Line added in the local Branch B1
+6th Line added in the local Branch B2
