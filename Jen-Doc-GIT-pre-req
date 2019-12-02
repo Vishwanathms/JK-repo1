@@ -1,0 +1,8 @@
+On the Master Jenkind
+GIT and JRE would be installed
+
+On the Slave
+GIT
+JRE
+JDK ( for the maven projects)
+Docker 
