@@ -9,7 +9,7 @@ pipeline {
                             // Create all folders up-to and including B
                             sh "mkdir samplemaven"
                         }
-                    }
+                    } 
                 }
                 dir("samplemaven") {
                     git branch: 'master', url: 'https://github.com/Vishwanathms/SampleMaven'
@@ -36,7 +36,7 @@ pipeline {
             /* we would be executing the docker-compose in the working directory, 
             bcz of the docker build issue as it can understand where is the war file. 
             we will not be able to give the complete path as src to copy the war file */
-                sh "docker build . -t tomcat-cust01"
+                sh "docker build . -t vishwacloudlab/tomcat-cust01"
                 sh "docker run -d -p 80:8080 --name cont1 vishwacloudlab/tomcat-cust01"
             }
         }
