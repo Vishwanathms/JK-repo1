@@ -46,6 +46,9 @@ pipeline {
             }
         }
         stage ('clean the image and the current folder') {
+            input {
+                 message 'Can I Proceed to Delete the ENV'
+            }
             steps {
                 sh "docker rm cont1 -f"
                 sh "docker image rmi vishwacloudlab/tomcat-cust01"
