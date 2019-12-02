@@ -4,12 +4,6 @@ pipeline {
         stage ("SCM Checkin-1") {
             steps {
                 script {
-                    if( !fileExists('JAGD')) {
-                        stage ('Create JAGD folder') {
-                            // Create all folders up-to and including B
-                            sh "mkdir JAGD"
-                        }
-                    }
                     if( !fileExists('samplemaven')) {
                         stage ('Create Maven folder') {
                             // Create all folders up-to and including B
@@ -20,9 +14,7 @@ pipeline {
                 dir("samplemaven") {
                     git branch: 'master', url: 'https://github.com/Vishwanathms/SampleMaven'
                 } 
-                dir("JAGD") {
-                   git branch: 'master', url: 'https://github.com/Vishwanathms/Jen-Ansi-Doc-GIT'
-                }
+                git branch: 'master', url: 'https://github.com/Vishwanathms/JK-REPO1'
             }
         }
         stage ("maven build") {
