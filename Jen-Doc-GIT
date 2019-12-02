@@ -40,11 +40,6 @@ pipeline {
                 sh "docker run -d -p 80:8080 --name cont1 vishwacloudlab/tomcat-cust01"
             }
         }
-        stage ('Check the output of container') {
-            steps {
-                sh "curl http://192.168.213.104/mvn-hello-world"
-            }
-        }
         stage ('push it to docker hub') {
             steps {
                 sh "docker push vishwacloudlab/tomcat-cust01"
